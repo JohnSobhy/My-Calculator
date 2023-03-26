@@ -13,6 +13,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
+        android:hint="0"
         android:textSize="@dimen/text_size"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,7 +30,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edit_text"
-
         />
 
 
@@ -37,7 +37,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/buttons_layout"
-
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
@@ -47,8 +46,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:text="Clr"
-        android:textAllCaps="false"
-        android:textSize="@dimen/text_size"
+        style="@style/MyButtonStyle"
         app:layout_constraintBottom_toTopOf="@+id/button_plus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/button_delete_last"
@@ -62,8 +60,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginStart="24dp"
         android:text="Del"
-        android:textAllCaps="false"
-        android:textSize="@dimen/text_size"
+        style="@style/MyButtonStyle"
         app:layout_constraintBaseline_toBaselineOf="@+id/button_clear"
         app:layout_constraintEnd_toStartOf="@+id/button_clear"
         app:layout_constraintStart_toStartOf="parent" />
@@ -75,7 +72,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         android:text="+"
-        android:textSize="@dimen/text_size"
+        style="@style/MyButtonStyle"
         app:layout_constraintBottom_toTopOf="@+id/button_minus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -88,7 +85,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
         android:text="9"
-        android:textSize="@dimen/text_size"
+        style="@style/MyButtonStyle"
         app:layout_constraintBaseline_toBaselineOf="@+id/button_plus"
         app:layout_constraintEnd_toStartOf="@+id/button_plus"
         app:layout_constraintStart_toEndOf="@id/button_8" />
@@ -99,7 +96,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
         android:text="8"
-        android:textSize="@dimen/text_size"
+        style="@style/MyButtonStyle"
         app:layout_constraintBaseline_toBaselineOf="@+id/button_9"
         app:layout_constraintEnd_toStartOf="@+id/button_9"
         app:layout_constraintStart_toEndOf="@id/button_7" />
@@ -111,7 +108,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="4dp"
         android:text="7"
-        android:textSize="@dimen/text_size"
+        style="@style/MyButtonStyle"
         app:layout_constraintBaseline_toBaselineOf="@+id/button_8"
         app:layout_constraintEnd_toStartOf="@+id/button_8"
         app:layout_constraintStart_toStartOf="parent" />
@@ -123,7 +120,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         android:text="-"
-        android:textSize="@dimen/text_size"
+        style="@style/MyButtonStyle"
         app:layout_constraintBottom_toTopOf="@+id/button_multiply"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -136,7 +133,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
         android:text="6"
-        android:textSize="@dimen/text_size"
+        style="@style/MyButtonStyle"
         app:layout_constraintBaseline_toBaselineOf="@+id/button_minus"
         app:layout_constraintEnd_toStartOf="@+id/button_minus"
         app:layout_constraintStart_toEndOf="@id/button_5" />
@@ -147,7 +144,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
         android:text="5"
-        android:textSize="@dimen/text_size"
+        style="@style/MyButtonStyle"
         app:layout_constraintBaseline_toBaselineOf="@+id/button_6"
         app:layout_constraintEnd_toStartOf="@+id/button_6"
         app:layout_constraintStart_toEndOf="@id/button_4" />
@@ -159,7 +156,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="4dp"
         android:text="4"
-        android:textSize="@dimen/text_size"
+        style="@style/MyButtonStyle"
         app:layout_constraintBaseline_toBaselineOf="@+id/button_5"
         app:layout_constraintEnd_toStartOf="@+id/button_5"
         app:layout_constraintStart_toStartOf="parent" />
@@ -171,7 +168,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
         android:text="*"
-        android:textSize="@dimen/text_size"
+        style="@style/MyButtonStyle"
         app:layout_constraintBottom_toTopOf="@+id/button_divide"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -184,7 +181,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
         android:text="3"
-        android:textSize="@dimen/text_size"
+        style="@style/MyButtonStyle"
         app:layout_constraintBaseline_toBaselineOf="@+id/button_multiply"
         app:layout_constraintEnd_toStartOf="@+id/button_multiply"
         app:layout_constraintStart_toEndOf="@id/button_2" />
@@ -195,7 +192,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
         android:text="2"
-        android:textSize="@dimen/text_size"
+        style="@style/MyButtonStyle"
         app:layout_constraintBaseline_toBaselineOf="@+id/button_3"
         app:layout_constraintEnd_toStartOf="@+id/button_3"
         app:layout_constraintStart_toEndOf="@id/button_1" />
@@ -207,7 +204,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="4dp"
         android:text="1"
-        android:textSize="@dimen/text_size"
+        style="@style/MyButtonStyle"
         app:layout_constraintBaseline_toBaselineOf="@+id/button_2"
         app:layout_constraintEnd_toStartOf="@+id/button_2"
         app:layout_constraintStart_toStartOf="parent" />
@@ -220,7 +217,7 @@
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="24dp"
         android:text="/"
-        android:textSize="@dimen/text_size"
+        style="@style/MyButtonStyle"
         app:layout_constraintBottom_toBottomOf="@id/buttons_layout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -233,7 +230,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
         android:text="="
-        android:textSize="@dimen/text_size"
+        style="@style/MyButtonStyle"
         app:layout_constraintBaseline_toBaselineOf="@+id/button_divide"
         app:layout_constraintEnd_toStartOf="@+id/button_divide"
         app:layout_constraintStart_toEndOf="@id/button_0" />
@@ -244,7 +241,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
         android:text="0"
-        android:textSize="@dimen/text_size"
+        style="@style/MyButtonStyle"
         app:layout_constraintBaseline_toBaselineOf="@+id/button_equal"
         app:layout_constraintEnd_toStartOf="@+id/button_equal"
         app:layout_constraintStart_toEndOf="@id/button_decimal" />
@@ -256,7 +253,7 @@
         android:layout_marginStart="24dp"
         android:layout_marginEnd="4dp"
         android:text="."
-        android:textSize="@dimen/text_size"
+        style="@style/MyButtonStyle"
         app:layout_constraintBaseline_toBaselineOf="@+id/button_0"
         app:layout_constraintEnd_toStartOf="@+id/button_0"
         app:layout_constraintStart_toStartOf="parent" />

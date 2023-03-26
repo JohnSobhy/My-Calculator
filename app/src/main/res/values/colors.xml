@@ -13,6 +13,8 @@
     <color name="dark_blue">#3E487E</color>
     <color name="dark_green">#102B27</color>
     <color name="green">#213A21</color>
+    <color name="coffee">#B6925B</color>
+    <color name="dark_gray">#97000000</color>
 
     <color name="button_color">@color/dark_blue</color>
     <color name="button_text">@color/white</color>
