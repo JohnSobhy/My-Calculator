@@ -13,6 +13,9 @@
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
+        android:digits="0123456789+-*/."
         android:hint="0"
         android:textSize="@dimen/text_size"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,7 +35,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edit_text"
         />
 
-
+<!--hard coded strings are left as is because this app won't have multiple languages-->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -221,11 +224,11 @@
         app:layout_constraintBottom_toBottomOf="@id/buttons_layout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@id/button_equal"
+        app:layout_constraintStart_toEndOf="@id/button_equals"
         app:layout_constraintTop_toBottomOf="@+id/button_multiply" />
 
     <Button
-        android:id="@+id/button_equal"
+        android:id="@+id/button_equals"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="4dp"
@@ -242,8 +245,8 @@
         android:layout_marginEnd="4dp"
         android:text="0"
         style="@style/MyButtonStyle"
-        app:layout_constraintBaseline_toBaselineOf="@+id/button_equal"
-        app:layout_constraintEnd_toStartOf="@+id/button_equal"
+        app:layout_constraintBaseline_toBaselineOf="@+id/button_equals"
+        app:layout_constraintEnd_toStartOf="@+id/button_equals"
         app:layout_constraintStart_toEndOf="@id/button_decimal" />
 
     <Button
